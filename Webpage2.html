@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="Webpage2.css">
+</head>
+<body>
+    <section id="booking">
+        <h2>Book an Appointment</h2>
+        <form action="submit_booking.php" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Mobile No:</label>
+            <input type="mob" id="mob" name="mob" required>
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="haircut">Haircut</option>
+                <option value="styling">Styling</option>
+                <option value="coloring">Coloring</option>
+                <option value="facial">Facial</option>
+                <option value="nail Art">Nail Art</option>
+                <option value="massage">Massage</option>
+                <!-- Add more service options as needed -->
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+</body>
+</html>
